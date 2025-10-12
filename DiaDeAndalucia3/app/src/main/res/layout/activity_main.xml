@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00F3C7C7"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="@string/textViewTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="79dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="131dp"
+            android:layout_height="74dp"
+            android:src="@drawable/andalucia" />
+
+        <ScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:fillViewport="true"
+            android:paddingRight="5dp"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="190dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="La bandera blanca y verde
+vuelve, tras siglos de guerra,
+a decir paz y esperanza,
+bajo el sol de nuestra tierra.
+¡Andaluces, levantaos!
+¡Pedid tierra y libertad!
+¡Sea por Andalucía libre,
+España y la Humanidad!
+Los andaluces queremos
+volver a ser lo que fuimos
+hombres de luz, que a los hombres,
+alma de hombres les dimos.
+¡Andaluces, levantaos!
+¡Pedid tierra y libertad!
+¡Sea por Andalucía libre,
+España y la Humanidad!"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Himno de Andalucía"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="1042dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
